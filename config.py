@@ -12,3 +12,19 @@ def mensaje_opcion(mensaje:str)->int:
             imprimir_errores('Opcion no es valida, Ingrese un numero')
             valor = input(Fore.CYAN+mensaje+' !# '+Fore.RESET)
     return int(valor)
+
+def imprimir_menu_libros():
+    os.system('clear')
+    print('''    ===================================
+    |        CONFIGURA LIBROS         |
+    ===================================
+    |  1: Leer archivo.               |
+    |  2: Listar libros.              |
+    |  3: Agregar libros.             |
+    |  4: Eliminar libro.             |
+    |  5: Buscar libros.              |
+    |  6: Ordenar libros por título.  |
+    |  7: Editar datos de un libro.   |
+    |  8: Guardar libro.              |
+    |  9: Salir.                      |
+    ===================================''')
